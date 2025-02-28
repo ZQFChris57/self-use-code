@@ -1,0 +1,76 @@
+---
+annotation-target: file:{{#each entry.files}}{{#if @last}}{{this}}{{/if}}{{/each}}
+---
+
+{{title}}
+---
+## Metadata
+* DOI: [{{DOI}}](https://doi.org/{{DOI}})
+* authors: [[{{authorString}}]]
+* containerTitle: [[{{containerTitle}}]]
+* date: [[{{year}}]]
+* Tags: {{#each entry.data.fields.keywords}}{{#if @last}}#{{this}}{{else}}#{{this}}, {{/if}}{{/each}}
+[*Read it now! See in Zotero*]({{zoteroSelectURI}})
+* 文章属性
+- [ ] 理论  
+- [ ] 实验
+---
+## Abstract
+```Zotero-Abstract
+ {{abstract}}
+```<p align="right">Zotero Annotations</p >
+{{note}}
+---
+## OB Notes
+* 可借鉴的点
+* 相关知识点
+* 文章逻辑：
+<p align="right">OB Pdf Annotations</p >
+
+Version 2
+---
+Type: {{entry.type}}
+Authors: {{authorString}}
+Year: {{year}}
+Title: {{title}}
+Journal: {{containerTitle}}
+Pages: {{page}}
+DOI: {{DOI}}
+Publisher: {{publisher}}
+Place: {{publisherPlace}}
+---
+
+# {{authorString}} ({{year}}) - {{title}}
+[==*Read it now! See in Zotero*==]({{zoteroSelectURI}})
+**Web:** [Open online]({{URL}})
+**Citekey:** {{citekey}}
+**Tags:** #source, (type), (status), (decade)
+
+## Abstract
+{{abstract}}
+
+## Notes
+{{note}}
+
+## Summary
+
+  
+## Research Objective(s)
+
+
+## Background / Problem Statement
+
+
+## Method(s)
+
+
+## Evaluation
+
+
+## Conclusion
+
+
+## Notes
+
+
+## References
